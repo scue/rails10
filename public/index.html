@@ -5,6 +5,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/common.css" type="text/css">
   <link rel="stylesheet" href="css/index.css" type="text/css">
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery.anystretch.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 
@@ -26,7 +29,8 @@
     </ul>
   </div>
 </div>
-<img src="images/home-banner-bg.jpg" alt="home-banner"/>
+
+<div class="home-banner" data-stretch="images/home-banner-bg.jpg"></div>
 
 <div class="footer">
   <div class="container">
@@ -34,6 +38,9 @@
   </div>
 </div>
 
+<script>
+  $('.home-banner').anystretch();
+</script>
 
 </body>
 
