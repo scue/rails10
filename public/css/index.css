@@ -3,6 +3,11 @@
   position: relative;
   z-index: 1000;
 }
+
+.index .navbar{
+    background-color: transparent;
+}
+
 .navbar a {
   color: #fff;
 }
@@ -47,4 +52,6 @@
 }
 .home-banner {
   height: 600px;
+  margin-top: -80px;
+
 }
