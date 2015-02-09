@@ -2,18 +2,14 @@
   background: #222;
   position: relative;
   z-index: 1000;
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: #c0865e;
+  }
 }
 
-.page-welcome .navbar{
-    background-color: transparent;
-}
-
-.navbar a {
-  color: #fff;
-}
-.navbar a:hover {
-  color: #c0865e;
-}
 .navbar-brand {
   float: left;
   padding-left: 0;
