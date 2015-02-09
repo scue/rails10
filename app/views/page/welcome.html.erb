@@ -14,7 +14,7 @@
 </div>
 
 <%# 使用Partial，痛点又少了一个，不淡定了!!! %>
-<%= render partial: 'issue_list' %>
+<%= render partial: 'issue_list', locals: { issues: @issues } %>
 
 <script>
   $('.home-banner').anystretch();
