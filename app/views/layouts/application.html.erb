@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Meetup</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class="<% params[:controller] + '-' + params[:action] %>">
+<body class="<%= params[:controller] + '-' + params[:action] %>">
     <div class="navbar clearfix">
       <div class="container">
         <a class="navbar-brand" href="/">
@@ -34,5 +35,6 @@
     <script>
       $('.home-banner').anystretch();
     </script>
+
 </body>
 </html>
