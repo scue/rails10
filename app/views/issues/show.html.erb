@@ -1,2 +1,20 @@
-<h1>Issues#show</h1>
-<p>Find me in app/views/issues/show.html.erb</p>
+<div class="issue-heading">
+  <div class="container">
+    <%= @issue.title %>
+  </div>
+</div>
+<div class="container">
+  <div class="replies">
+    <article class="reply clearfix">
+      <div class="avatar">
+        <img src="https://avatars2.githubusercontent.com/u/2650439?v=3&s=460" alt="" class="image-circle">
+      </div>
+      <div class="body">
+        <div class="heading">
+          <h5 class="name"><a href="#">linkscue</a></h5>
+        </div>
+        <%= @issue.content %>
+      </div>
+    </article>
+  </div>
+</div>
