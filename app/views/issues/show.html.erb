@@ -1,6 +1,7 @@
 <div class="issue-heading">
   <div class="container">
     <%= @issue.title %>
+    <%= link_to 'Destroy', issue_path(@issue), method: :delete, data: { confirm: '确认删除评论?' }, class: "btn btn-primary" %>
   </div>
 </div>
 <div class="container">
