@@ -11,6 +11,12 @@ module Meetup
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    # 避免生成过多暂时不需要的文件
+    config.generators do |g|
+        g.assets false
+        g.helper false
+        g.test_framework false
+    end
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
