@@ -11,8 +11,14 @@ Rails.application.routes.draw do
   #   get 'products/:id' => 'catalog#view'
 
   get '/about' => 'page#about'
+
+  get '/issues/new' => "issues#new"
+  # 为解决: undefined method `issues_path' for #<#<Class:0x007f9ac913bfa8>:0x007f9ac8b6f110>
+  get 'issues' => "issues#index", :as => 'issues' # 其实没懂这行的意义..
   get '/issues/:id' => "issues#show", :as => "issue"
   delete 'issues/:id' => "issues#destroy"
+  # 为解决: No route matches [POST] "/issues"
+  post 'issues' => 'issues#create'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
