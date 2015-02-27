@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   get '/about' => 'page#about'
   get '/issues/:id' => "issues#show", :as => "issue"
+  delete 'issues/:id' => "issues#destroy"
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
